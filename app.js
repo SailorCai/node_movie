@@ -7,10 +7,16 @@ var session = require('express-session');
 var mongoStore = require('connect-mongo')(session);
 var multipart = require('connect-multiparty');
 var fs = require('fs');
+var env = process.env.NODE_ENV || 'development';
 
-var port = process.PORT || 3000;
+var port = process.PORT || 3001;
 var app = express();
-var dbUrl = 'mongodb://127.0.0.1/imooc_movie';
+var dbUrl = 'mongodb://imooc_movie_runner:F**k9001$@127.0.0.1:29999/imooc_movie';
+
+if(env === 'development'){
+  dbUrl = 'mongodb://localhost/imooc_movie';
+};
+
 mongoose.connect(dbUrl, {
 	useMongoClient:true
 });
