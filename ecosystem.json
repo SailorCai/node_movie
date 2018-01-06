@@ -1,5 +1,5 @@
 {
-	"apps:": [
+	"apps": [
 		{
 			"name": "Movie",	//应用名字
 			"script": "app.js", //启动的脚本或入口文件
