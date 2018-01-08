@@ -2,7 +2,7 @@ var _ = require('underscore');
 var Index = require('../app/controllers/index');
 var User = require('../app/controllers/user');
 var Movie = require('../app/controllers/movie');
-var Comment = require('../app/controllers/Comment');
+var Comment = require('../app/controllers/comment');
 var Category = require('../app/controllers/category');
 
 module.exports = function(app){
