@@ -52,7 +52,7 @@ exports.savePoster = function(req, res, next){
   var filePath = posterData.path;
   var originalFilename = posterData.originalFilename;
 
-  console.log(req.files);
+  console.log(req.files); 
 
   if(originalFilename){
     fs.readFile(filePath, function(err, data){
